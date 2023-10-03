@@ -1,0 +1,108 @@
+/* Common css start */
+:root{
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Abril Fatface', cursive;
+    --heading-font: 'Open Sans', sans-serif;
+    --primary-color: #0f2f44;
+}
+h1,h2,h3,h4,h4,h5,h6,p,ul,ol,li{
+    margin: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+
+/* Coommon css end */
+
+/* top bar section start */
+#top-bar{
+    background-color: var(--primary-color);
+    color: #fefefe;
+    padding: 19px 0;
+    font-family: var(--primary-font);
+}
+/* top bar section end */
+
+ /* Nav Bar section start */
+#menu-bar #menu ul li a{
+    padding: 32px 19px;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #222222;
+}
+.navbar {
+    padding: 0;
+}
+#menu-bar #menu ul li a:hover,
+#menu-bar #menu ul li button:hover{
+    color: #ffc712;    
+    background-color: #fff9e6;
+    transition: 0.5s;
+}
+#menu-bar #menu ul li button{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid #a6a6a6;
+}
+ /* Nav Bar section end */
+
+/* Banner Bar section start */
+#banner{
+    height: 600px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner h2{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+#banner h1{
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+#banner h3{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 32px;
+    color: #8484bf;
+    letter-spacing: 8px;
+}
+#banner a{
+    padding: 16px 20px;
+    color: #ffffff;
+    background-color: #8484bf;
+    border-radius: 5%;
+}
+#banner button{
+    color: #8484bf;
+    margin: 21px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+@media only screen and (max-width:575px) {
+    #banner{
+        width: 100%;
+    }
+    #banner h1,h2,h3{
+        font-size: 40px;
+    }
+
+}
+/* Banner Bar section end */
